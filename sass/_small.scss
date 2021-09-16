@@ -1,0 +1,9 @@
+@media(min-width: 576px) {
+    .about {
+        &__info {
+            &-image {
+                height: 50em;
+            }
+        }
+    }
+}

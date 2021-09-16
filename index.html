@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- site icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo-icon.png">
+  <title>Sunnyside Agency</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:wght@700;900&display=swap" rel="stylesheet"> 
+  <!-- external css file -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/47371cfd43.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <div class="contact-wrapper" id="contact">
+    <form class="form">
+      <h1 class="form-heading">Contact Us!</h1>
+
+      <div class="form-box">
+          <input type="text" id="name" placeholder="Your name">
+          <p class="error-text">error</p>
+      </div>
+
+      <div class="form-box">
+          <input type="email" id="mail" placeholder="Your email">
+          <p class="error-text">error</p>
+      </div>
+
+      <div class="form-box">
+          <textarea type="text" id="mess" placeholder="Massage..."></textarea>
+          <p class="error-text">error</p>
+      </div>
+
+      <div class="control-btns">
+        <button class="close">Close</button>
+        <button class="send">Send</button>
+      </div>
+
+      <!-- <div class="popup">
+          <p>Your massage has been sent!</p>
+          <button class="close">Close</button>
+      </div> -->
+    </form>
+  </div>
+
+  <div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- ==== navbar ==== -->
+
+  <nav class="navbar">
+    <a href="#">
+      <img src="images/logo.svg" alt="Sunnyside&copy;" class="navbar__logo">
+    </a>
+    <button class="navbar__btn"><i class="fas fa-bars"></i></button>
+    <menu class="navbar__menu">
+      <li><a href="#about" class="menu-item">About</a></li>
+      <li><a href="#services" class="menu-item">Services</a></li>
+      <li><a href="#projects" class="menu-item">Projects</a></li>
+      <li><button href="#" class="menu-item itemBtn" id="contactBtn">Contact</button></li>
+    </menu>
+  </nav>
+
+  <!-- ==== header ==== -->
+
+  <header class="header">
+    <h1 class="header__heading">We are creatives</h1>
+    <img src="images/icon-arrow-down.svg" alt="" class="fas">
+  </header>
+
+  <!-- ==== main ==== -->
+
+  <main class="main">
+
+    <!-- ==== about section==== -->
+    <section class="about" id="about">
+
+      <div class="about__info about__info--first">
+        <div class="about__info-image about__info-image--first"></div>
+        <div class="about__info-text">
+          <h2 class="about__info-text-heading">Transform your brand</h2>
+          <p class="about__info-text-content">
+            We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <a href="" class="about__info-text-link about__info-text-link--first">Learn more</a>
+        </div>
+      </div>
+
+      <div class="about__info about__info--second">
+        <div class="about__info-image about__info-image--second"></div>
+        <div class="about__info-text">
+          <h2 class="about__info-text-heading">Stand out to the right audience</h2>
+          <p class="about__info-text-content">
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+          </p>
+          <a href="" class="about__info-text-link about__info-text-link--second">Learn more</a>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- ==== services section ==== -->
+    <section class="services" id="services">
+
+      <div class="services__card services__card--design">
+        <div class="services__card-text services__card-text--design">
+          <h2 class="services__card-text-heading">
+            Graphic design
+          </h2>
+          <p class="services__card-text-content">
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          </p>
+        </div>
+      </div>
+
+      <div class="services__card services__card--photo">
+        <div class="services__card-text services__card-text--photo">
+          <h2 class="services__card-text-heading">
+            Photography
+          </h2>
+          <p class="services__card-text-content">
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== testimorials section ==== -->
+    <section class="testimorials">
+      <h3 class="testimorials__heading">Client Testimorials</h3>
+      <div class="testimorials__opinions">
+
+        <div class="testimorials__opinions-opinion">
+          <img src="images/image-emily.jpg" alt="Emily R." class="testimorials__opinions-opinion-image">
+          <p class="testimorials__opinions-opinion-content">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+          <h4 class="testimorials__opinions-opinion-name">Emily R.</h4>
+          <span class="testimorials__opinions-opinion-ocup">Marketing Director</span>
+        </div>
+
+        <div class="testimorials__opinions-opinion">
+          <img src="images/image-thomas.jpg" alt="Thomas S." class="testimorials__opinions-opinion-image">
+          <p class="testimorials__opinions-opinion-content">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h4 class="testimorials__opinions-opinion-name">Thomas S.</h4>
+          <span class="testimorials__opinions-opinion-ocup">Chief Operating Officer</span>
+        </div>
+
+        <div class="testimorials__opinions-opinion">
+          <img src="images/image-jennie.jpg" alt="Jennie F." class="testimorials__opinions-opinion-image">
+          <p class="testimorials__opinions-opinion-content">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <h4 class="testimorials__opinions-opinion-name">Jennie F.</h4>
+          <span class="testimorials__opinions-opinion-ocup">Business Owner</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==== projects section ==== -->
+    <section class="projects" id="projects">
+      <div class="projects__item projects__item--one"></div>
+      <div class="projects__item projects__item--two"></div>
+      <div class="projects__item projects__item--three"></div>
+      <div class="projects__item projects__item--four"></div>
+    </section>
+
+  </main>
+
+  <!-- ==== footer ==== -->
+  <footer class="footer">
+    <span class="footer__logo">sunnyside</span>
+
+    <div class="footer__nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+    </div>
+
+    <div class="footer__social">
+      <a href="#"><img class="socialIcon" src="images/icon-facebook.svg" alt="facebook"></a>
+      <a href="#"><img class="socialIcon" src="images/icon-instagram.svg" alt="instagram"></a>
+      <a href="#"><img class="socialIcon" src="images/icon-twitter.svg" alt="twitter"></a>
+      <a href="#"><img class="socialIcon" src="images/icon-pinterest.svg" alt="pinterest"></a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

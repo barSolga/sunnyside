@@ -1,0 +1,150 @@
+@media(min-width: 873px) {
+    html {
+        scroll-padding-top: 80px;
+    }
+    .scroll-top {
+        padding: .5em;
+    }
+    .contact-wrapper {
+        .form {
+            width: 50%;
+        }
+    }
+    .navbar {
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        padding: 1em 2em;
+        &__btn {
+            display: none;
+        }
+        &__menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: static;
+            align-items: center;
+            width: auto;
+            padding: 0;
+            text-align: left;
+            background: none;
+            box-shadow: none;
+            .menu-item {
+                padding: 1.5em;
+                font-size: 1.8rem;
+                color: $white;
+            }
+            .itemBtn {
+                padding: .5em 1.5em;
+                margin: 0 0 0 1em;
+                color: #000;
+                background-color: $white;
+                &:hover {
+                    background-color: rgba($color: $white, $alpha: .3);
+                    color: $white;
+                }
+            }
+            &::before {
+                content: none;
+            }
+        }
+    }
+    .navOnScroll {
+        background-color: rgba($color: $white, $alpha: 1);
+        padding: 0 2em;
+        box-shadow: 0 5px 40px rgba(0, 0, 0, .2);
+        .navbar__logo {
+            background-color: #000;
+        }
+        .menu-item {
+            color: #000;
+        }
+        .itemBtn {
+            background-color: #000;
+            color: $white;
+            border-radius: 0;
+            &:hover {
+                background-color: rgba($color: #000, $alpha: .3);
+                color: $white;
+            }
+        }
+    }
+    .header {
+        background-image: url('../images/desktop/image-header.jpg');
+        &__heading {
+            font-size: 6rem;
+        }
+    }
+
+    .about {
+        &__info {
+            &--first {
+                flex-direction: row-reverse;
+            }
+            &--second {
+                flex-direction: row;
+            }
+            &-image {
+                width: 50%;
+                height: 60em;
+                &--first {
+                    background-image: url('../images/desktop/image-transform.jpg');
+                }
+                &--second {
+                    background-image: url('../images/desktop/image-stand-out.jpg');
+                }
+            }
+            &-text {
+                width: 50%;
+                align-items: flex-start;
+                padding: 10em;
+                text-align: left;
+            }
+        }
+    }
+    .services {
+        flex-direction: row;
+        &__card {
+            background-repeat: no-repeat;
+            &--design {
+                background-image: url('../images/desktop/image-graphic-design.jpg');
+            }
+            &--photo {
+                background-image: url('../images/desktop/image-photography.jpg');
+            }
+           &-text {
+               width: 50%;
+           }
+        }
+    }
+    .testimorials {
+        &__opinions {
+            flex-direction: row;
+        }
+    }
+    .projects {
+        &__item {
+            width: 25%;
+            &--one {
+                background-image: url('../images/desktop/image-gallery-milkbottles.jpg');
+            }
+            &--two {
+                background-image: url('../images/desktop/image-gallery-orange.jpg');
+            }
+            &--three {
+                background-image: url('../images/desktop/image-gallery-cone.jpg');
+            }
+            &--four {
+                background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
+            }
+        }
+    }
+    .footer {
+        &__nav {
+            width: 30%;
+        }
+        &__social {
+            width: 20%;
+        }
+    }
+}
